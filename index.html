@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Application</title>
+    <link href="css/bootstrapmin.css" rel="stylesheet" type="text/css">
+    <style>
+      * {
+       box-sizing: border-box;
+      }
+      body {
+        background-color: #33CCFF;
+      }
+      html {
+    overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather app</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><a href ="asset/index.html">Website</a></a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                  </ul>
+            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Usage Guide</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id ="city class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"id ="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class ="my-4 text-center">Weather of <span id="cityName">Pune</span></h1>
+      <mai
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Temprature</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Clear<small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Temprature is 45<sup>o</sup>C <span id="temp"></span></li>
+                  <li>Minimum Temreature is 21<sup>o</sup>C<span id=""min_temp></span></li>
+                  <li>Maximum temprature is 47<sup>o</sup>C<span id="max-temp"></span></li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Humidity Info</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Humid<small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Wind degree is 45<sup>o</sup><span id="wind_degrees"></span></li>
+                  <li>Cloud PCT is 1<span id="cloud_pct"></span></li>
+                  <li>Humidity is 149354<span id="humidity"></span></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Wind Info</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Atmosphere<small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Wind speed is 0.71Km/hr<span id="wind_speed"></span></li>
+                  
+                  <li>Sunrise is 6.47 AM<span id="sunrise"></span></li>
+                  <li>Sunset is 5.52 PM<span id="sunset"></span></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <h2 class="display-6 text-center mb-4">Weather of common places</h2>
+    
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 22%;"><th style="width: 22%;">Cloud_pct</th>
+                <th style="width: 22%;">Feels_like</th>
+                <th style="width: 22%;">Humidity</th>
+                <th style="width: 22%;">Max_temp</th>
+                <th style="width: 22%;">Min_temp</th>
+                <th style="width: 22%;">Sunrise</th>
+                <th style="width: 22%;">Sunset</th>
+                <th style="width: 22%;">Temp</th>
+                <th style="width: 22%;">Wind_degrees</th>
+                <th style="width: 22%;">Wind_Speed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Kolkata</th>
+                
+                <td>0</td>
+                <td>44<sup>o</sup>C</td>
+                <td>197428</td>
+                <td>47.9<sup>o</sup>C</td>
+                <td>20.6<sup>o</sup>C</td>
+                <td>6.12 Am</td>
+                <td>5.47 Pm</td>
+                <td>41.3<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.19Km/hr</td>
+                
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Shrinagar</th>
+                <td>0</td>
+                <td>44<sup>o</sup>C</td>
+                <td>197168</td>
+                <td>47.4<sup>o</sup>C</td>
+                <td>20.1<sup>o</sup>C</td>
+                <td>6.14 Am</td>
+                <td>5.43 Pm</td>
+                <td>41.4<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.00Km/hr</td>
+              </tr>
+            </tbody>
+    
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Lucknow</th>
+                <td>0</td>
+                <td>42<sup>o</sup>C</td>
+                <td>197428</td>
+                <td>47.3<sup>o</sup>C</td>
+                <td>20.9<sup>o</sup>C</td>
+                <td>6.17 Am</td>
+                <td>5.46 Pm</td>
+                <td>41.16<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.19Km/hr</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Delhi</th>
+                <td>0</td>
+                <td>43<sup>o</sup>C</td>
+                <td>197428</td>
+                <td>46.2<sup>o</sup>C</td>
+                <td>19.7<sup>o</sup>C</td>
+                <td>6.27 Am</td>
+                <td>5.41 Pm</td>
+                <td>37.6<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.19Km/hr</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Bhopal</th>
+                <td>0</td>
+                <td>19<sup>o</sup>C</td>
+                <td>197428</td>
+                <td>22.4<sup>o</sup>C</td>
+                <td>20.6<sup>o</sup>C</td>
+                <td>6.12 Am</td>
+                <td>5.47 Pm</td>
+                <td>28.8<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.16Km/hr</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Mumbai</th>
+                <td>0</td>
+                <td>40<sup>o</sup>C</td>
+                <td>197428</td>
+                <td>40.2<sup>o</sup>C</td>
+                <td>20.6<sup>o</sup>C</td>
+                <td>6.12 Am</td>
+                <td>5.47 Pm</td>
+                <td>41.3<sup>o</sup>C</td>
+                <td>0.641</td>
+                <td>1.19Km/hr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      </div>
+      <div class="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
