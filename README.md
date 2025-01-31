@@ -18,3 +18,6 @@ Key steps include designing the user interface, setting up API calls to external
 Security measures such as authentication and authorization (OAuth, JWT) are incorporated to ensure that data exchanges are secure. The project also emphasizes error handling, performance optimization, and creating a responsive, interactive user experience. By integrating various APIs, this project demonstrates the power of full-stack development and API utilization in building modern, data-driven web applications.
 
 The tools used in this project are VS Code text editor,chrome browser and rapidApi
+
+Output
+![Image](https://github.com/user-attachments/assets/cbc62847-a327-49b4-b43b-0498d6c7d757)
